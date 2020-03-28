@@ -1,22 +1,28 @@
 <template>
   <v-app>
-    <Sidebar/>
+    <SideNav/>
+
     <v-content>
-      <Home/>
+      <v-container>
+
+          <MainPage/>
+
+      </v-container>
     </v-content>
+
   </v-app>
 </template>
 
 <script>
-import Home from './components/Home.vue';
-import Sidebar from './components/Sidebar.vue';
+import MainPage from './components/MainPage.vue';
+import SideNav from './components/SideNav.vue';
 
 export default {
   name: 'App',
 
   components: {
-    Sidebar,
-    Home,
+    SideNav,
+    MainPage,
   },
 
   data: () => ({
